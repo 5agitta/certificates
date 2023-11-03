@@ -1,0 +1,19 @@
+{
+    "hosts": [
+        "vpn.sagitta.dev",
+				"10.240.0.2",
+				"34.142.155.38"
+    ],
+    "CN": "vpn.bsfintech.dev",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [{
+        "C": "BD",
+        "L": "Boardbazar",
+        "O": "Sagitta",
+        "OU": "DevOps",
+        "ST": "Gazipur"
+    }]
+}
