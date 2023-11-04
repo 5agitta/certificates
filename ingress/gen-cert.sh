@@ -1,11 +1,11 @@
-cat > pritunl-csr.json <<EOF
+cat > ingress-csr.json <<EOF
 {
     "hosts": [
-        "vpn.sagitta.dev",
-				"10.240.0.2",
-				"34.142.155.38"
+        "*.sagitta.dev",
+				"10.240.0.138",
+				"10.240.0.139"
     ],
-    "CN": "vpn.sagitta.dev",
+    "CN": "ingress.sagitta.dev",
     "key": {
         "algo": "rsa",
         "size": 2048
@@ -25,4 +25,4 @@ cfssl gencert \
   -ca-key=../ca/ca-key.pem \
   -config=../ca/ca-config.json \
   -profile=dev-cluster \
-  pritunl-csr.json | cfssljson -bare pritunl
+  ingress-csr.json | cfssljson -bare ingress

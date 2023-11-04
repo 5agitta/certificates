@@ -1,0 +1,19 @@
+{
+    "hosts": [
+        "*.sagitta.dev",
+				"10.240.0.138",
+				"10.240.0.139"
+    ],
+    "CN": "ingress.sagitta.dev",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [{
+        "C": "BD",
+        "L": "Boardbazar",
+        "O": "Sagitta",
+        "OU": "DevOps",
+        "ST": "Gazipur"
+    }]
+}
